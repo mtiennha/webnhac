@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Nghe Nhac</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="web">
+        <div class="nav">
+            <div class="nav_logo">
+                <img src="./img/LogoWeb.png" alt="">
+            </div>
+            <div class="loader"></div>
+            <div class="nav_option">
+                <div class="nav_option1">
+                    <div class="nav_option1-item">
+                        <i class="nav_option1-icon fa-solid fa-music"></i>
+                        <a href="#content_body-hot" class="nav_option1-title">Khám Phá</a>
+                    </div>
+                    <div class="nav_option1-item">
+                        <i class="nav_option1-icon fa-solid fa-heart"></i>
+                        <a href="#content_body-love" class="nav_option1-title">Yêu Thích</a>
+                    </div>
+                    <div class="nav_option1-item">
+                        <i class="nav_option1-icon fa-solid fa-user-plus"></i>
+                        <a href="#" class="nav_option1-title">Theo Dõi</a>
+                    </div>
+                    <div class="nav_option1-item">
+                        <i class="nav_option1-icon fa-solid fa-clock-rotate-left"></i>
+                        <a href="#content_body-history" id="link" class="nav_option1-title">Lịch Sử</a>
+                    </div>
+                <div class="loader"></div>
+                    <div class="nav_option1-item">
+                        <i class="nav_option1-icon fa-solid fa-folder-plus"></i>
+                    <a href="#" class="nav_option1-title">Tạo Danh Sách</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="header">
+            <i class="header-content-icon fa-solid fa-left-long"></i>
+            <i class="header-content-icon fa-solid fa-right-long"></i>
+            <div class="inputGroup">
+                <input type="text" required="" autocomplete="off">
+                <label for="name">
+                    <i class="fa-solid fa-magnifying-glass">
+                    </i>Tim nhac ...</label>
+            </div>
+            <i class="header_icon-gear gear fa-solid fa-gear"></i>
+            <a href="./singin/sigin.html"><i class="header_icon-gear fa-solid fa-user"></i></a>
+            <i class="header_icon-gear bell fa-solid fa-bell fa-shake"></i>
+        </div>
+            <div class="footer">
+                <div class="footer_music-current">
+                    <div class="music-thumb">
+                        <img src="./img/hay trao cho anh.webp" alt="">
+                    </div>
+                    <div class="footer_album-title"> 
+                        <h3 class="contetn_album-title--1 music-name">Hãy Trao Cho ANH</h3>
+                        <p class="contetn_album-title--2">Bài hát của Snoop Dogg và Sơn Tùng M-TP</p>
+                        <a href=""><i class="contetn_album-title--icon fa-solid fa-play fa-beat"></i></a>
+                    </div>
+                </div>
+                <div class="footer_music-control">
+                    <div class="footer_music-control--icon">
+                        <div class="footer_music-control--icon-">
+                            <audio src="./audio/hãy trao cho anh.mp3" id="song"></audio>
+                            <i class="fa-solid hovericon repeat-icon fa-repeat" id="repeat-active" onclick="changeIconClass()"></i>
+                            <i class="fa-solid random-icon hovericon fa-shuffle"></i>
+                            <i class="fa-solid forward-icon forward-left hovericon fa-forward fa-flip-horizontal"></i>
+                            <i class="fa-solid play-music hovericon fa-circle-play" id="circle-active" onclick="changeIconPlay()"></i>
+                            <i class="fa-solid forward-icon forward-right hovericon fa-forward"></i>
+                            <i class="fa-solid history-icon hovericon fa-clock-rotate-left fa-flip-horizontal" ></i>
+                        </div>
+                    </div>
+                    <div class="footer_music-control--range">
+                        <input type="range" name="range" id="range" class="range">
+                        <div class="footer_music-control--timer">
+                            <div class="duration">2:01</div>
+                            <div class="remaning">-3:01</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="tabs">
+            <div id="menu_1">
+                <div class="content">
+                    <div class="content_body-1" id="content_body-history">
+                        <h1 class="content_title">Gần đây.</h1>
+                        <div class="content_album">
+                            <img src="./img/img1.png" alt="">
+                            <div class="contetn_album-title">
+                                <p class="contetn_album-title--1">My list</p>
+                                <p class="contetn_album-title--2">Danh sách phát của: Tôi</p>
+                                <a href=""><i class="contetn_album-title--icon fa-solid fa-play fa-beat"></i></a>
+                            </div>
+                        </div>
+                        <div class="content_album">
+                            <img src="./img/img2.png" alt="">
+                            <div class="contetn_album-title">
+                                <p class="contetn_album-title--1">Daily Mix 5</p>
+                                <p class="contetn_album-title--2">Danh sách phát của: ICTU Music</p>
+                                <i class="contetn_album-title--icon fa-solid fa-play fa-beat"></i>
+                            </div>
+                        </div>
+                        <div class="content_album">
+                            <img src="./img/img3.png" alt="">
+                            <div class="contetn_album-title">
+                                <p class="contetn_album-title--1">Nhạc suyễn</p>
+                                <p class="contetn_album-title--2">Danh sách phát của: mpham</p>
+                                <i class="contetn_album-title--icon fa-solid fa-play fa-beat"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_body-1" id="content_body-hot">
+                        <h1 class="content_title">Danh sách phổ biến.</h1>
+                        <div class="content_album">
+                            <img src="./img/img4.png" alt="">
+                            <div class="contetn_album-title">
+                                <p class="contetn_album-title--1">Villain origin story</p>
+                                <p class="contetn_album-title--2">salt</p>
+                                <i class="contetn_album-title--icon fa-solid fa-play fa-beat"></i>
+                            </div>
+                        </div>
+                        <div class="content_album">
+                            <img src="./img/img5.png" alt="">
+                            <div class="contetn_album-title">
+                                <p class="contetn_album-title--1">thurday</p>
+                                <p class="contetn_album-title--2">XXXTENTATICO, Post Malone, Jeremih và nhiều hơn</p>
+                                <i class="contetn_album-title--icon fa-solid fa-play fa-beat"></i>
+                            </div>
+                        </div>
+                        <div class="content_album">
+                            <img src="./img/img3.png" alt="">
+                            <div class="contetn_album-title">
+                                <p class="contetn_album-title--1">indie</p>
+                                <p class="contetn_album-title--2">Những ca khúc indie hay nhất</p>
+                                <i class="contetn_album-title--icon fa-solid fa-play fa-beat"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_body-1" id="content_body-love">
+                        <h1 class="content_title content_title-love">Yêu Thích.</h1>
+                        <div class="content_body-love--musics">
+                            <img src="" alt="">
+                        </div>
+                        <div class="content_body-love--musics">
+                            
+                            <img src="./img/hay trao cho anh.webp" class="content_body-love--musics--porter" alt="">
+                            <p class="content_body-love--musics--title">
+                                Hãy Trao Cho Anh</p>
+                            <p class="content_body-love--musics--title" id="content_body-love--musics--title-litle">
+                                Sơn Tùng MTP</p>
+                        </div> 
+                        <div class="content_body-love--musics">
+
+                        </div>
+                        <div class="content_body-love--musics">
+
+                        </div>
+                        <div class="content_body-love--musics">
+                            
+                        </div>
+                        <div class="content_body-love--musics">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="menu_2">
+                
+            </div>
+            
+        </div>
+        <script src="./app.js"></script>
+    </div>
+</body>
+</html>
